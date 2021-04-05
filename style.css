@@ -4,6 +4,10 @@ body {
   line-height: 1;
 }
 
+main {
+  margin-bottom: 4em;
+}
+
 textarea {
   background: transparent;
   border: none;
@@ -82,7 +86,3 @@ textarea {
   background-color: rgb(154, 154, 230);
 }
 
-
-main {
-  margin-bottom: 4em;
-}
