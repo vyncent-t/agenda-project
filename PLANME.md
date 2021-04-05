@@ -6,8 +6,8 @@ NEED TO:
 <!-- B. CREATE TIMEBLOCKS FOR 9-5 WORK DAY
     - Create grid layout with bootstrap for every hour that exists in the work day -->
 
-C. COLOR TIMEBLOCKS FOR PAST PRESENT AND FUTURE
-    - Exist in base CSS?
+<!-- C. COLOR TIMEBLOCKS FOR PAST PRESENT AND FUTURE
+    - Exist in base CSS? -->
 
 D. WHEN CLICKING ON A TIME BLOCK, CAN ENTER AN EVENT
     - Need to make it so you cannot add to a time that has passsed?
@@ -25,10 +25,9 @@ jQuery functions for when the time right now timeRN class is set to current
 - if the time is not yet then blue
 
 
+need inputs to be static
+need to save inputs to local data
+prevent default on forms
+forms on every input? lables?
 
-loop over all times and set a data for the time in 24 time hours mode
-
-if data time compared to time now do some
-
-
-MAY NEED TO SEE IF IT WILL REMAIN IN THE PAST AT MIDNIGHT
+add buttons
