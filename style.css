@@ -48,7 +48,7 @@ textarea {
 }
 
 .past {
-  background-color: #d3d3d3;
+  background-color: #adadad;
 }
 
 .present {
@@ -74,13 +74,13 @@ textarea {
 
 
 /* My classes */
-.timename {
+/* .timename {
   background-color: rgb(136, 233, 136);
-}
+} */
 
-.taskplace {
+/* .taskplace {
   background-color: rgb(243, 228, 144);
-}
+} */
 
 .saveplace {
   background-color: rgb(154, 154, 230);

@@ -29,3 +29,6 @@ jQuery functions for when the time right now timeRN class is set to current
 loop over all times and set a data for the time in 24 time hours mode
 
 if data time compared to time now do some
+
+
+MAY NEED TO SEE IF IT WILL REMAIN IN THE PAST AT MIDNIGHT

@@ -14,7 +14,7 @@ setInterval(() => {
 
 
 //current hour 
-let currentHour = moment().format('H')
+let currentHour = moment().format('kk')
 console.log(currentHour)
 
 
@@ -30,15 +30,20 @@ function hoursFromNow(time) {
   return now.diff(todayTime,"hours");
 }
 
-let workblocks = document.querySelectorAll('.timepiece')
+let workblocks = document.querySelectorAll('.taskplace')
 
     for (let card of workblocks) { 
         if (card.dataset.basetime < currentHour){
             console.log(`${card.dataset.basetime} is in the past, set to gray`)
-            if (card.dataset.basetime === currentHour) {
-                console.log(`The work hour rn is ${card.dataset.basetime}`)
+            card.classList.add('past')
             }
-        } if (card.dataset.basetime > currentHour) {console.log(`${card.dataset.basetime} in the future set to blue`)}
+        if (card.dataset.basetime === currentHour) {
+            console.log(`The work hour rn is ${card.dataset.basetime}`)
+            card.classList.add('present')
+            }
+        if (card.dataset.basetime > currentHour) {console.log(`${card.dataset.basetime} in the future set to blue`)
+            card.classList.add('future')
+            }
     }
 
 
