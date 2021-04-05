@@ -56,11 +56,11 @@ let workblocks = document.querySelectorAll('.taskplace')
     }
 
 
-$('button').click(function prevent(e) {
+$('.savebutton').click(function prevent(e) {
     e.preventDefault();
 })
 
-$('button').click(savetasks)
+$('.savebutton').click(savetasks)
 
 
 let user9AM = {
