@@ -30,28 +30,33 @@
       <p id="currentDay" class="lead"></p>
     </header>
     <main>
+      
     <div id="agenda" class="container">
-      <div class="row timepiece" id="row9AM">
+    <form action="">
+      <div class="row timepiece">
         <div class="col-2 timename hour">
           <p class="time-block">9AM</p>
         </div>
         <div class="col-9 taskplace"  data-basetime= 09>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, veniam.</p>
+          <label for="9AM"></label>
+          <input id="9AM" class="taskbox"></input>
         </div>
         <div class="col-1 saveBtn rounded-right">
-          <i>Save</i>
+          <i><button>Save</button></i>
         </div>
       </div>
+
       
-      <div class="row timepiece" id="row10AM">
+      <div class="row timepiece">
         <div class="col-2 timename hour">
           <p class="time-block">10AM</p>
         </div>
         <div class="col-9 taskplace" data-basetime=10>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur, veniam.</p>
+          <label for="10AM"></label>
+          <input id="10AM" class="taskbox">Lorem ipsum dolor</input>
         </div>
         <div class="col-1 saveBtn rounded-right">
-          <i>Save</i>
+          <i><button></button></i>
         </div>
       </div>
       
@@ -138,7 +143,8 @@
           <i>Save</i>
         </div>
       </div>      
-      
+    </form>
+
     </div>
     </main>
 

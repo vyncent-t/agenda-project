@@ -20,10 +20,6 @@ E. SAVE BUTTON THAT STORES THE USER INPUT EVENT TO THE LOCAL STORAGE
 
 Keep inputs static on page? not the "" function?
 
-jQuery functions for when the time right now timeRN class is set to current 
-- if time is less than time rn make gray
-- if the time is not yet then blue
-
 
 need inputs to be static
 need to save inputs to local data
@@ -31,3 +27,34 @@ prevent default on forms
 forms on every input? lables?
 
 add buttons
+
+
+array of usertasks
+object per hour
+let usertasks = [{9amTask},{10amTask}]
+
+on save button, run a function that for loops every object in user tasks and saves its todo key value to local storage and prints it at each places inner text
+
+- move the id TIME tag to the input tag in each?
+- class of userTodo on every input
+- for loop (on save?) for every userTodo value to be push and update it to the array of objects userTodoInput key:?
+
+need to make it so that values arent always being pushed on but rather updated
+
+usertasks[i].push(userTodo.value)
+<!-- stringify this? -->
+
+0
+let 9amTask = { 
+    time: 9am
+    userTodoInput: userinput
+}
+
+
+1
+let 10amTask = { 
+    time: 10am
+    todo: userinput
+} 
+
+if condtion for if entry is empty print " "
