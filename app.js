@@ -1,4 +1,18 @@
-    let task9AMYO = $('#9AM').val()
+let userinfo = localStorage.getItem('tasks')
+if (userinfo) {
+    let newinfo = JSON.parse(userinfo)
+    $('#9AM').val(newinfo.task9AMYO)
+    $('#10AM').val(newinfo.task10AMYO)
+    $('#11AM').val(newinfo.task11AMYO)
+    $('#12PM').val(newinfo.task12PMYO)
+    $('#1PM').val(newinfo.task1PMYO)
+    $('#2PM').val(newinfo.task2PMYO)
+    $('#3PM').val(newinfo.task3PMYO)
+    $('#5PM').val(newinfo.task5PMYO)
+    $('#4PM').val(newinfo.task4PMYO)
+}
+
+let task9AMYO = $('#9AM').val()
     let task10AMYO = $('#10AM').val()
     let task11AMYO = $('#11AM').val()
     let task12PMYO = $('#12PM').val()
@@ -39,7 +53,7 @@ function hoursFromNow(time) {
   return now.diff(todayTime,"hours");
 }
 
-let workblocks = document.querySelectorAll('.taskplace')
+let workblocks = document.querySelectorAll('.timepiece')
 
     for (let card of workblocks) { 
         if (card.dataset.basetime < currentHour){
@@ -124,6 +138,19 @@ function savetasks () {
     task3PMYO = $('#3PM').val()
     task5PMYO = $('#5PM').val()
     task4PMYO = $('#4PM').val()
+    let tasks = {
+    task9AMYO,
+    task10AMYO,
+    task11AMYO,
+    task12PMYO,
+    task1PMYO,
+    task2PMYO,
+    task3PMYO,
+    task5PMYO,
+    task4PMYO,
+    }
+
+    localStorage.setItem("tasks",JSON.stringify(tasks))
     // for(let i = 0; i < taskBox.length; i++) {
     //     console.log([i].value)
     //     // taskArray[i].push(tasks[i].value)

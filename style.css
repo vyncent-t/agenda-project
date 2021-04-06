@@ -62,10 +62,16 @@ textarea {
 }
 
 .saveBtn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 20%;
   border-left: 1px solid black;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   background-color: #06aed5;
+  border-bottom: 2px solid black;
   color: white;
 }
 
@@ -76,15 +82,42 @@ textarea {
 
 
 /* My classes */
-/* .timename {
-  background-color: rgb(136, 233, 136);
-} */
 
-/* .taskplace {
-  background-color: rgb(243, 228, 144);
-} */
+
+.timename {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: 20%;
+  /* background-color: transparent; */
+}
+
+.taskplace {
+padding: 0px !important;
+height: 50px;
+}
 
 .saveplace {
   background-color: rgb(154, 154, 230);
+
 }
 
+.inputC {
+  flex-shrink: 0;
+  flex-grow: 0;
+  flex-basis: 80%;
+  flex: 4;
+  width: 200px !important;
+  height: 100px !important;
+  margin: 0px !important;
+  background-color: transparent;
+}
+
+
+.timepiece {
+  display: flex;
+  flex-direction: row;
+  width: 100% !important;
+
+}
