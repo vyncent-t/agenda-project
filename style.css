@@ -57,7 +57,10 @@ textarea {
 }
 
 .future {
-  background-color: #14790b;
+  background-color: #18af0a;
+  color: white;
+}
+.future div input {
   color: white;
 }
 
